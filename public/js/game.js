@@ -2,10 +2,16 @@
  * Created by tmq on 01/05/2017.
  */
 
+// Create connection
+var socket = io('http://localhost:3000');
+var playerInfo = {name: 'player name'};
+
 // Game objects
 var p1 = new Paddle(),
     p2 = new Paddle(),
     ball = new Ball();
+
+var typePlayer = 0;
 
 // Positions of paddles
 var yPositionP1 = 0,
